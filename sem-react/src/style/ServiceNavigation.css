@@ -1,13 +1,43 @@
-.service-nav-wrapper {
+.services-nav-wrapper {
     background: #FAFAF8;
-    padding: 40px 0;
-  
-    top: 80px;
-    z-index: 100;
+    padding: 50px 0;
     border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
-.service-nav {
+.services-nav-heading {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.services-nav-heading span {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(212,166,61,.12);
+    color: #D4A63D;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.services-nav-heading h2 {
+    font-size: 42px;
+    color: #1F5A48;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.services-nav-heading p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.services-nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +45,10 @@
     flex-wrap: wrap;
 }
 
-.service-link {
+.services-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 14px 26px;
     border: none;
     border-radius: 999px;
@@ -23,35 +56,145 @@
     color: #555;
     font-size: 15px;
     font-weight: 600;
+    white-space: nowrap;
     cursor: pointer;
     transition: all .35s ease;
     box-shadow: 0 12px 30px rgba(0,0,0,.06);
 }
 
-.service-link:hover {
+.services-nav-link:hover {
     transform: translateY(-4px);
     color: #1F5A48;
-    box-shadow: 0 18px 40px rgba(0,0,0,.1);
+    box-shadow: 0 18px 40px rgba(0,0,0,.10);
 }
 
-.service-link.active {
+.services-nav-link.active {
     background: #D4A63D;
     color: #fff;
-    transform: translateY(-4px);
     box-shadow: 0 18px 40px rgba(212,166,61,.35);
 }
 
+/* ==========================
+   Large Tablet
+========================== */
+
+@media (max-width:1024px){
+
+    .services-nav-wrapper{
+        padding:45px 0;
+    }
+
+    .services-nav-heading h2{
+        font-size:38px;
+    }
+
+    .services-nav-heading p{
+        font-size:16px;
+    }
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
 @media (max-width:768px){
 
-.service-nav{
-    overflow-x:auto;
-    justify-content:flex-start;
-    flex-wrap:nowrap;
-    padding-bottom:10px;
+    .services-nav-wrapper{
+        padding:40px 0;
+    }
+
+    .services-nav-heading{
+        margin-bottom:28px;
+    }
+
+    .services-nav-heading h2{
+        font-size:32px;
+    }
+
+    .services-nav-heading p{
+        font-size:15px;
+        padding:0 10px;
+    }
+
+    .services-nav{
+        overflow-x:auto;
+        overflow-y:hidden;
+        flex-wrap:nowrap;
+        justify-content:flex-start;
+        gap:14px;
+        padding:6px 4px 12px;
+        scroll-snap-type:x proximity;
+        -webkit-overflow-scrolling:touch;
+        scrollbar-width:none;
+    }
+
+    .services-nav::-webkit-scrollbar{
+        display:none;
+    }
+
+    .services-nav-link{
+        flex-shrink:0;
+        scroll-snap-align:start;
+        padding:12px 22px;
+        font-size:14px;
+    }
+
 }
 
-.service-link{
-    flex-shrink:0;
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:576px){
+
+    .services-nav-wrapper{
+        padding:32px 0;
+    }
+
+    .services-nav-heading span{
+        font-size:11px;
+        padding:6px 14px;
+    }
+
+    .services-nav-heading h2{
+        font-size:28px;
+    }
+
+    .services-nav-heading p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    .services-nav-link{
+        padding:11px 20px;
+        font-size:14px;
+    }
+
 }
+
+/* ==========================
+   Small Phones (iPhone SE)
+========================== */
+
+@media (max-width:390px){
+
+    .services-nav-wrapper{
+        padding:28px 0;
+    }
+
+    .services-nav-heading h2{
+        font-size:24px;
+    }
+
+    .services-nav-heading p{
+        font-size:13px;
+    }
+
+    .services-nav-link{
+        padding:10px 18px;
+        font-size:13px;
+        gap:6px;
+    }
 
 }

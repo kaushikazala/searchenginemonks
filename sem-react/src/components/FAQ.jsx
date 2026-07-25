@@ -44,9 +44,11 @@ export default function FAQ() {
                       <i className={isOpen ? 'fa-solid fa-minus' : 'fa-solid fa-plus'}></i>
                     </span>
                   </button>
-                  <div className={`faq-answer${isOpen ? ' faq-answer-open' : ''}`}>
-                    <p>{item.a}</p>
-                  </div>
+               {isOpen && (
+  <div className="faq-answer">
+    <p>{item.a}</p>
+  </div>
+)}
                 </Reveal>
               );
             })}

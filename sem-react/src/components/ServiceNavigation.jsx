@@ -47,11 +47,11 @@ export default function ServiceNavigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
- return (
-  <section className="service-nav-wrapper">
+return (
+  <section className="services-nav-wrapper">
     <div className="container">
 
-      <div className="service-nav-heading">
+      <div className="services-nav-heading">
         <span>OUR EXPERTISE</span>
 
         <h2>Explore Our Services</h2>
@@ -62,12 +62,12 @@ export default function ServiceNavigation() {
         </p>
       </div>
 
-      <div className="service-nav">
+      <div className="services-nav">
         {services.map((service) => (
           <button
             key={service.id}
             onClick={() => scrollToSection(service.id)}
-            className={`service-link ${
+            className={`services-nav-link ${
               active === service.id ? "active" : ""
             }`}
           >

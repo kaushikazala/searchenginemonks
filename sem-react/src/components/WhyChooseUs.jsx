@@ -74,33 +74,34 @@ export default function WhyChooseUs() {
           </div>
         </Reveal>
 
-        <div className="why-grid">
+       <div className="why-grid">
+  {features.map((item, index) => {
+    const Icon = item.icon;
 
-          {features.map((item, index) => {
-            const Icon = item.icon;
+    return (
+      <Reveal
+        key={index}
+        className="why-card-wrapper"
+      >
+        <div className="why-card">
 
-            return (
-              <Reveal key={index}>
-                <div className="why-card">
+          <div className="why-icon">
+            <Icon size={34} strokeWidth={2} />
+          </div>
 
-                  <div className="why-icon">
-                    <Icon size={34} strokeWidth={2} />
-                  </div>
+          <h3>{item.title}</h3>
 
-                  <h3>{item.title}</h3>
+          <p>{item.description}</p>
 
-                  <p>{item.description}</p>
-
-                  <span className="why-arrow">
-                    →
-                  </span>
-
-                </div>
-              </Reveal>
-            );
-          })}
+          <span className="why-arrow">
+            →
+          </span>
 
         </div>
+      </Reveal>
+    );
+  })}
+</div>
 
       </div>
     </section>

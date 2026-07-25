@@ -3,7 +3,7 @@ export const portfolioData = [
     id: 1,
     title: "E-Commerce Website",
     category: "Web Development",
-    image: "/images/portfolio/ecommerce.jpg",
+    image: "./assests/images.jpg",
     description:
       "A modern online shopping platform with secure payments, responsive design, and an intuitive user experience.",
     technologies: ["React", "Node.js", "MongoDB"],

@@ -166,9 +166,9 @@ export default function Hero() {
       <div className="hero-glow-core"></div>
 
       {/* Premium Orbit Rings */}
-      <div className="orbit orbit-1"></div>
-      <div className="orbit orbit-2"></div>
-      <div className="orbit orbit-3"></div>
+      {/* <div className="orbit orbit-1"></div>
+      {/* <div className="orbit orbit-2"></div> */}
+      {/* <div className="orbit orbit-3"></div> */}
 
       {/* Orbit Nodes */}
       <span className="orbit-node node1"></span>
@@ -221,7 +221,7 @@ export default function Hero() {
   </Reveal>
 
   {/* Testimonial */}
-  <Reveal delay={2} className="testimonial-wrap">
+  {/* <Reveal delay={2} className="testimonial-wrap">
     <div className="glass-card testimonial-card-hero-premium">
 
       <div className="testimonial-quotes">"</div>
@@ -247,7 +247,7 @@ export default function Hero() {
       </div>
 
     </div>
-  </Reveal>
+  </Reveal> */}
 
 </div>
         </div>

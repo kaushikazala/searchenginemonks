@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     background: #FAFAF8;
-    padding: 50px -1px 100px;
+
 }
 
 .services-hero-container {
@@ -259,5 +259,245 @@ flex-direction:column;
 justify-content:center;
 width:100%;
 }
+
+}
+/* ==========================================
+   Large Tablets (iPad Pro / Landscape)
+========================================== */
+
+@media (max-width:1024px){
+
+    .services-hero{
+        padding:90px 0;
+    }
+
+    .services-hero-container{
+        gap:50px;
+    }
+
+    .hero-content h1{
+        font-size:52px;
+    }
+
+    .hero-content p{
+        font-size:17px;
+        max-width:100%;
+    }
+
+    .main-card{
+        width:100%;
+        max-width:480px;
+    }
+
+}
+
+
+/* ==========================================
+   Tablets
+========================================== */
+
+@media (max-width:992px){
+
+    .services-hero{
+        padding:80px 0;
+    }
+
+    .services-hero-container{
+        flex-direction:column;
+        text-align:center;
+        gap:60px;
+    }
+
+    .hero-content,
+    .hero-visual{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:44px;
+        line-height:1.2;
+    }
+
+    .hero-content p{
+        margin:24px auto 0;
+        max-width:650px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+        margin-top:32px;
+    }
+
+    .hero-stats{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:35px;
+        margin-top:45px;
+    }
+
+    .main-card{
+        width:100%;
+        max-width:500px;
+    }
+
+    .floating-card{
+        display:none;
+    }
+
+    .hero-bg-gradient,
+    .hero-blob{
+        display:none;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width:768px){
+
+    .services-hero{
+        padding:65px 0;
+    }
+
+    .hero-tag{
+        font-size:13px;
+        padding:8px 18px;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:14px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+        justify-content:center;
+        padding:15px 20px;
+    }
+
+    .hero-stats{
+        gap:28px;
+        margin-top:38px;
+    }
+
+    .hero-stats h2{
+        font-size:28px;
+    }
+
+    .hero-stats span{
+        font-size:14px;
+    }
+
+    .main-card{
+        max-width:420px;
+        border-radius:24px;
+    }
+
+}
+
+
+/* ==========================================
+   Small Phones
+========================================== */
+
+@media (max-width:576px){
+
+    .services-hero{
+        padding:55px 0;
+    }
+
+    .hero-tag{
+        font-size:12px;
+        padding:7px 16px;
+    }
+
+    .hero-content h1{
+        font-size:30px;
+        line-height:1.25;
+    }
+
+    .hero-content p{
+        font-size:15px;
+        margin-top:20px;
+    }
+
+    .hero-buttons{
+        margin-top:28px;
+    }
+
+    .hero-stats{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:24px;
+        margin-top:36px;
+    }
+
+    .hero-stats h2{
+        font-size:24px;
+    }
+
+    .hero-stats span{
+        font-size:13px;
+    }
+
+    .main-card{
+        border-radius:20px;
+    }
+
+}
+
+
+/* ==========================================
+   iPhone SE / Very Small Phones
+========================================== */
+
+@media (max-width:390px){
+
+    .services-hero{
+        padding:45px 0;
+    }
+
+    .hero-content h1{
+        font-size:26px;
+    }
+
+    .hero-content p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    .hero-tag{
+        font-size:11px;
+        padding:6px 14px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        font-size:14px;
+        padding:14px 18px;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .hero-stats h2{
+        font-size:22px;
+    }
 
 }

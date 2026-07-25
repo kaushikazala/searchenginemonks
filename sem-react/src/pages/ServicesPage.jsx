@@ -28,7 +28,6 @@ export default function ServicesPage() {
         <ServiceSection key={service.id} {...service} />
       ))}
 
-      <OurProcess />
 
       <IndustriesSection/>
 

@@ -4,7 +4,7 @@
 
 .process-section {
   position: relative;
-  padding: 120px 0;
+  padding: 70px 0;
   background: #fafaf8;
   overflow: hidden;
 }
@@ -184,7 +184,7 @@
   position: absolute;
 
   top: -18px;
-  left: 32px;
+  right: 32px;
 
   width: 56px;
   height: 56px;

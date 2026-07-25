@@ -8,7 +8,7 @@ export default function GooglePartner() {
         <div className="partner-image">
 
           <img
-            src="/images/google-partner.png"
+            src="src/assests/PremierPartner-RGB.svg"
             alt="Google Premier Partner"
           />
 

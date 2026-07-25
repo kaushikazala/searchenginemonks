@@ -48,7 +48,10 @@ export default function ServiceSection({
 
         {/* Visual */}
 <div className="service-visual">
-  {Illustration && <Illustration />}
+
+  <div className="visual-card">
+    {Illustration && <Illustration />}
+  </div>
 
   {stats.map((item, index) => (
     <div className={`floating-stat stat${index + 1}`} key={index}>
