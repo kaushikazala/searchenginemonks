@@ -1,0 +1,128 @@
+/* ==========================================
+   INDUSTRIES SECTION
+========================================== */
+
+.industries-section{
+    padding:120px 0;
+    background:#fff;
+}
+
+.industries-header{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.industries-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:999px;
+    background:#FDF5E6;
+    color:#C8931F;
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
+
+.industries-header h2{
+    font-size:clamp(2.5rem,5vw,4rem);
+    color:#17352C;
+    margin-bottom:20px;
+}
+
+.industries-header h2 span{
+    color:#C8931F;
+}
+
+.industries-header p{
+    color:#666;
+    line-height:1.8;
+}
+
+.industries-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+}
+
+.industry-card{
+    background:#FAFAF8;
+    border:1px solid rgba(23,53,44,.08);
+    border-radius:24px;
+    padding:32px 24px;
+    transition:.35s;
+    text-align:center;
+}
+
+.industry-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
+
+.industry-icon{
+    width:72px;
+    height:72px;
+    margin:0 auto 22px;
+    border-radius:18px;
+    background:#FDF5E6;
+    color:#C8931F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.35s;
+}
+
+.industry-card:hover .industry-icon{
+    background:#C8931F;
+    color:#fff;
+    transform:rotate(-8deg);
+}
+
+.industry-card h3{
+    color:#17352C;
+    font-size:1.3rem;
+    margin-bottom:14px;
+}
+
+.industry-card p{
+    color:#666;
+    line-height:1.7;
+    font-size:.95rem;
+}
+
+@media(max-width:992px){
+
+.industries-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.industries-section{
+padding:90px 0;
+}
+
+.industries-grid{
+grid-template-columns:1fr;
+}
+
+.industries-header h2{
+font-size:2.3rem;
+}
+
+}
+
+@media(max-width:576px){
+
+.industries-header h2{
+font-size:2rem;
+}
+
+.industry-card{
+padding:28px 22px;
+}
+
+}

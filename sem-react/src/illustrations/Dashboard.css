@@ -1,0 +1,292 @@
+.dashboard-card {
+    width: 520px;
+    background: #fff;
+    border-radius: 28px;
+    padding: 30px;
+    box-shadow: 0 30px 70px rgba(0,0,0,.08);
+    position: relative;
+}
+
+.dashboard-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.dashboard-top h4{
+    margin:0;
+    color:#1F2937;
+}
+
+.dashboard-top p{
+    margin-top:6px;
+    color:#888;
+    font-size:14px;
+}
+
+.live-badge{
+    color:#16a34a;
+    font-weight:600;
+}
+
+.graph-area{
+    height:180px;
+}
+
+.graph-area svg{
+    width:100%;
+    height:100%;
+}
+
+.graph-area path{
+    fill:none;
+    stroke:#D4A63D;
+    stroke-width:5;
+    stroke-linecap:round;
+}
+
+.metrics{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.metric-card{
+    background:#fafaf8;
+    border-radius:18px;
+    padding:18px;
+    transition:.3s;
+}
+
+.metric-card:hover{
+    transform:translateY(-5px);
+}
+
+.metric-card h3{
+    color:#D4A63D;
+    margin:0;
+}
+
+.metric-card span{
+    color:#666;
+    font-size:14px;
+}
+/* ===========================
+   Browser Dashboard
+=========================== */
+
+.browser-dashboard{
+
+    position:relative;
+
+    overflow:visible;
+
+}
+
+.browser-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding-bottom:20px;
+
+}
+
+.browser-dots{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+.browser-dots span{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.browser-dots span:nth-child(1){
+
+    background:#ff605c;
+
+}
+
+.browser-dots span:nth-child(2){
+
+    background:#ffbd44;
+
+}
+
+.browser-dots span:nth-child(3){
+
+    background:#00ca4e;
+
+}
+
+.browser-address{
+
+    flex:1;
+
+    background:#F4F4F4;
+
+    border-radius:40px;
+
+    padding:10px 18px;
+
+    font-size:13px;
+
+    color:#888;
+
+}
+
+.browser-body{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:#fafafa;
+
+}
+
+.hero-preview{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    padding:28px;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+.hero-image{
+
+    height:140px;
+
+    border-radius:20px;
+
+    background:linear-gradient(135deg,#D4A63D,#F7E7B2);
+
+}
+
+.line{
+
+    height:10px;
+
+    border-radius:10px;
+
+    background:#E4E4E4;
+
+    margin-bottom:12px;
+
+}
+
+.large{
+
+    width:85%;
+
+}
+
+.short{
+
+    width:55%;
+
+}
+
+.hero-text button{
+
+    margin-top:15px;
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#D4A63D;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    padding:0 28px 28px;
+
+}
+
+.service-box{
+
+    height:90px;
+
+    border-radius:18px;
+
+    background:white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.floating-ui{
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:14px 18px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.ui-performance{
+
+    top:90px;
+
+    right:-40px;
+
+}
+
+.ui-mobile{
+
+    bottom:110px;
+
+    left:-40px;
+
+}
+
+.ui-design{
+
+    bottom:30px;
+
+    right:-20px;
+
+}

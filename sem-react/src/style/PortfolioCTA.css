@@ -1,0 +1,237 @@
+/* ==========================================
+   PORTFOLIO CTA
+========================================== */
+
+.portfolio-cta{
+    position:relative;
+    padding:120px 0;
+    background:#FAFAF8;
+    overflow:hidden;
+}
+
+.portfolio-cta-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:36px;
+
+    padding:90px 60px;
+
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #17352C,
+        #1F5A48
+    );
+
+    box-shadow:
+        0 35px 90px rgba(23,53,44,.22);
+
+}
+
+.portfolio-blob{
+
+position:absolute;
+
+border-radius:50%;
+
+filter:blur(90px);
+
+}
+
+.blob-one{
+
+width:280px;
+height:280px;
+
+background:rgba(200,147,31,.30);
+
+top:-100px;
+left:-80px;
+
+}
+
+.blob-two{
+
+width:220px;
+height:220px;
+
+background:rgba(255,255,255,.08);
+
+bottom:-80px;
+right:-50px;
+
+}
+
+.portfolio-cta-tag{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border-radius:999px;
+
+background:rgba(255,255,255,.12);
+
+color:#F8D67A;
+
+font-size:.8rem;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+margin-bottom:24px;
+
+}
+
+.portfolio-cta h2{
+
+font-size:clamp(2.8rem,5vw,4.5rem);
+
+color:white;
+
+line-height:1.1;
+
+margin-bottom:24px;
+
+}
+
+.portfolio-cta h2 span{
+
+color:#F8D67A;
+
+}
+
+.portfolio-cta p{
+
+max-width:720px;
+
+margin:0 auto 42px;
+
+color:rgba(255,255,255,.85);
+
+line-height:1.9;
+
+font-size:1.05rem;
+
+}
+
+.portfolio-cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+.portfolio-cta-buttons .btn{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:15px 28px;
+
+transition:.35s;
+
+font-weight:600;
+
+}
+
+.portfolio-cta-buttons .btn-primary{
+
+background:#C8931F;
+
+border:none;
+
+}
+
+.portfolio-cta-buttons .btn-primary:hover{
+
+background:white;
+
+color:#17352C;
+
+transform:translateY(-4px);
+
+}
+
+.portfolio-cta-buttons .btn-outline-light{
+
+border:2px solid rgba(255,255,255,.35);
+
+color:white;
+
+}
+
+.portfolio-cta-buttons .btn-outline-light:hover{
+
+background:white;
+
+color:#17352C;
+
+transform:translateY(-4px);
+
+}
+
+@media(max-width:768px){
+
+.portfolio-cta{
+
+padding:90px 0;
+
+}
+
+.portfolio-cta-box{
+
+padding:60px 30px;
+
+}
+
+.portfolio-cta h2{
+
+font-size:2.4rem;
+
+}
+
+.portfolio-cta-buttons{
+
+flex-direction:column;
+
+}
+
+.portfolio-cta-buttons .btn{
+
+justify-content:center;
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.portfolio-cta-box{
+
+padding:50px 22px;
+
+}
+
+.portfolio-cta h2{
+
+font-size:2rem;
+
+}
+
+}   

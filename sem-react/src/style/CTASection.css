@@ -1,0 +1,234 @@
+.cta-section{
+    position:relative;
+    overflow:hidden;
+    padding:120px 0;
+    background:linear-gradient(180deg,#FAFAF8,#F7F2E8);
+}
+
+.cta-card{
+
+    position:relative;
+
+    padding:80px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.cta-tag{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:40px;
+
+    background:#FFF3D7;
+
+    color:#C99517;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+.cta-card h2{
+
+    margin-top:25px;
+
+    font-size:54px;
+
+    line-height:1.15;
+
+    color:#111;
+
+}
+
+.cta-card p{
+
+    max-width:720px;
+
+    margin:25px auto 45px;
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-primary{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:18px 34px;
+
+    border:none;
+
+    border-radius:60px;
+
+    background:#D4A63D;
+
+    color:#fff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.cta-primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(212,166,61,.35);
+
+}
+
+.cta-secondary{
+
+    padding:18px 34px;
+
+    border-radius:60px;
+
+    border:2px solid #D4A63D;
+
+    background:transparent;
+
+    color:#D4A63D;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.cta-secondary:hover{
+
+    background:#D4A63D;
+
+    color:#fff;
+
+}
+
+.cta-stats{
+
+    margin-top:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:70px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-stats h3{
+
+    font-size:42px;
+
+    color:#D4A63D;
+
+    margin-bottom:8px;
+
+}
+
+.cta-stats span{
+
+    color:#666;
+
+}
+
+.cta-blob{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:.25;
+
+}
+
+.blob1{
+
+    width:320px;
+
+    height:320px;
+
+    background:#F4D06F;
+
+    top:-120px;
+
+    left:-100px;
+
+}
+
+.blob2{
+
+    width:280px;
+
+    height:280px;
+
+    background:#D4A63D;
+
+    bottom:-120px;
+
+    right:-80px;
+
+}
+
+@media(max-width:768px){
+
+.cta-card{
+
+padding:50px 30px;
+
+}
+
+.cta-card h2{
+
+font-size:38px;
+
+}
+
+.cta-stats{
+
+gap:35px;
+
+}
+
+}

@@ -1,0 +1,251 @@
+/* ==========================================
+   CONTACT HERO
+========================================== */
+
+.contact-hero{
+    position:relative;
+    padding:140px 0 110px;
+    background:#FAFAF8;
+    overflow:hidden;
+}
+
+.contact-hero::before{
+    content:"";
+    position:absolute;
+    width:380px;
+    height:380px;
+    top:-120px;
+    left:-120px;
+    border-radius:50%;
+    background:rgba(31,90,72,.08);
+    filter:blur(120px);
+}
+
+.contact-hero::after{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    right:-100px;
+    bottom:-100px;
+    border-radius:50%;
+    background:rgba(200,147,31,.08);
+    filter:blur(120px);
+}
+
+.contact-hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.contact-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:999px;
+    background:#FDF5E6;
+    color:#C8931F;
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:24px;
+}
+
+.contact-content h1{
+    font-size:clamp(3rem,6vw,5rem);
+    line-height:1.05;
+    color:#17352C;
+    margin-bottom:24px;
+}
+
+.contact-content h1 span{
+    color:#C8931F;
+}
+
+.contact-content p{
+    max-width:560px;
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+    margin-bottom:36px;
+}
+
+.contact-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.contact-buttons .btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 26px;
+}
+
+.contact-visual{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:520px;
+}
+
+.contact-glow{
+    position:absolute;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background:#1F5A48;
+    opacity:.08;
+    filter:blur(80px);
+}
+
+.contact-ring{
+    position:absolute;
+    border:1px solid rgba(31,90,72,.15);
+    border-radius:50%;
+    animation:contactRotate 22s linear infinite;
+}
+
+.ring-one{
+    width:220px;
+    height:220px;
+}
+
+.ring-two{
+    width:320px;
+    height:320px;
+    animation-direction:reverse;
+}
+
+.ring-three{
+    width:420px;
+    height:420px;
+}
+
+.contact-circle{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    z-index:2;
+}
+
+.contact-icon{
+    color:#C8931F;
+    margin-bottom:14px;
+}
+
+.contact-circle h3{
+    color:#17352C;
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+.contact-circle p{
+    color:#666;
+}
+
+.floating-card{
+    position:absolute;
+    padding:14px 22px;
+    background:white;
+    border-radius:999px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    color:#17352C;
+    font-weight:600;
+}
+
+.card-one{
+    top:60px;
+    left:20px;
+}
+
+.card-two{
+    right:0;
+    top:180px;
+}
+
+.card-three{
+    bottom:60px;
+    left:60px;
+}
+
+@keyframes contactRotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@media(max-width:992px){
+
+.contact-hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.contact-content p{
+margin:0 auto 36px;
+}
+
+.contact-buttons{
+justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-hero{
+padding:110px 0 80px;
+}
+
+.contact-visual{
+min-height:420px;
+}
+
+.ring-one{
+width:180px;
+height:180px;
+}
+
+.ring-two{
+width:260px;
+height:260px;
+}
+
+.ring-three{
+width:340px;
+height:340px;
+}
+
+.contact-circle{
+width:180px;
+height:180px;
+}
+
+}
+
+@media(max-width:576px){
+
+.contact-content h1{
+font-size:2.5rem;
+}
+
+.floating-card{
+font-size:.82rem;
+padding:10px 16px;
+}
+
+}

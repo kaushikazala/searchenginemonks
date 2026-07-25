@@ -1,0 +1,349 @@
+/* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+.why-choose-section{
+    position: relative;
+    padding: 120px 0;
+    background: #FAFAF8;
+    overflow: hidden;
+}
+
+/* Background */
+
+.why-choose-section::before,
+.why-choose-section::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
+}
+
+.why-choose-section::before{
+    width: 360px;
+    height: 360px;
+    top: -80px;
+    left: -100px;
+    background: rgba(31,90,72,.08);
+}
+
+.why-choose-section::after{
+    width: 320px;
+    height: 320px;
+    right: -80px;
+    bottom: -60px;
+    background: rgba(200,147,31,.08);
+}
+
+.why-choose-section .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================
+        HEADER
+========================== */
+
+.why-header{
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.why-tag{
+    display: inline-block;
+    color: #C8931F;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.why-header h2{
+    color: #17352C;
+    font-size: clamp(2.5rem,5vw,4rem);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.why-header h2 span{
+    color:#C8931F;
+}
+
+.why-header p{
+    color:#666;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+/* ==========================
+        GRID
+========================== */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* ==========================
+        CARD
+========================== */
+
+.why-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(23,53,44,.08);
+
+    border-radius:28px;
+
+    padding:36px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    box-shadow:
+        0 18px 50px rgba(0,0,0,.05);
+
+}
+
+.why-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(200,147,31,.10),
+        transparent 60%
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.why-card:hover::before{
+
+    opacity:1;
+
+}
+
+.why-card:hover{
+
+    transform:
+    translateY(-12px);
+
+    border-color:#C8931F;
+
+    box-shadow:
+        0 28px 70px rgba(0,0,0,.12);
+
+}
+
+/* ==========================
+        ICON
+========================== */
+
+.why-icon{
+
+    width:74px;
+    height:74px;
+
+    border-radius:20px;
+
+    background:#FDF5E6;
+
+    color:#C8931F;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:26px;
+
+    transition:.4s;
+
+}
+
+.why-card:hover .why-icon{
+
+    background:#C8931F;
+
+    color:white;
+
+    transform:
+        rotate(-8deg)
+        scale(1.08);
+
+}
+
+.why-icon svg{
+
+    width:34px;
+    height:34px;
+
+}
+
+/* ==========================
+        TEXT
+========================== */
+
+.why-card h3{
+
+    color:#17352C;
+
+    font-size:1.45rem;
+
+    margin-bottom:16px;
+
+}
+
+.why-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+/* ==========================
+        ARROW
+========================== */
+
+.why-arrow{
+
+    display:inline-flex;
+
+    width:44px;
+    height:44px;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#F7F7F7;
+
+    color:#17352C;
+
+    font-size:1.2rem;
+
+    transition:.35s;
+
+}
+
+.why-card:hover .why-arrow{
+
+    background:#17352C;
+
+    color:white;
+
+    transform:translateX(6px);
+
+}
+
+/* ==========================
+    RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.why-choose-section{
+
+padding:90px 0;
+
+}
+
+.why-header{
+
+margin-bottom:50px;
+padding:0 20px;
+
+}
+
+.why-header h2{
+
+font-size:2.3rem;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+gap:22px;
+
+}
+
+.why-card{
+
+padding:30px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.why-header h2{
+
+font-size:2rem;
+
+}
+
+.why-card{
+
+padding:24px;
+
+border-radius:22px;
+
+}
+
+.why-icon{
+
+width:62px;
+height:62px;
+
+}
+
+.why-icon svg{
+
+width:28px;
+height:28px;
+
+}
+
+.why-card h3{
+
+font-size:1.3rem;
+
+}
+
+}
