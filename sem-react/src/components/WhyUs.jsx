@@ -1,6 +1,7 @@
 import Reveal from './Reveal.jsx';
 import { features } from '../data/content.js';
 import monk from '../assests/Monk-2.svg';
+import "./WhyUs.css";
 
 const metrics = [
   { value: '214%', label: 'Avg. Traffic Increase' },

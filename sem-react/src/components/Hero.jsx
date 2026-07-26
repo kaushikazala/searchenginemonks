@@ -1,6 +1,7 @@
 import Reveal from './Reveal.jsx';
 import StatCounter from './StatCounter.jsx';
 import monk from '../assests/Monk-2.svg';
+import "./Hero.css";
 
 const stats = [
   { icon: 'fa-solid fa-briefcase', to: 100, suffix: '+', label: 'Projects Completed' },

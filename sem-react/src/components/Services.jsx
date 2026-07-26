@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Reveal from "./Reveal.jsx";
 import { services } from "../data/content.js";
+import "./Services.css";
 
 const serviceColors = [
   { accent: "#1F5A48", light: "#E7F7F2" },
