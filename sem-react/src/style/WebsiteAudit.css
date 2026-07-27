@@ -1,0 +1,147 @@
+/* ==========================================================
+   WEBSITE AUDIT PAGE
+========================================================== */
+
+.website-audit-page{
+
+    position:relative;
+
+    min-height:100vh;
+
+    background:#ffffff;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================================
+   SECTION SPACING
+========================================================== */
+
+.website-audit-page section{
+
+    position:relative;
+
+}
+
+.website-audit-page section:not(:last-child){
+
+    margin-bottom:0;
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.website-audit-page .container{
+
+    width:min(1200px,calc(100% - 48px));
+
+    margin-inline:auto;
+
+}
+
+/* ==========================================================
+   REPORT WRAPPER
+========================================================== */
+
+.audit-report{
+
+    position:relative;
+
+    animation:reportFade .7s ease;
+
+}
+
+/* ==========================================================
+   LOADING
+========================================================== */
+
+.audit-loading-wrapper{
+
+    min-height:500px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/* ==========================================================
+   DIVIDERS
+========================================================== */
+
+.overall-score{
+
+    border-top:1px solid rgba(31,90,72,.06);
+
+}
+
+.audit-metrics{
+
+    border-top:1px solid rgba(31,90,72,.06);
+
+}
+
+.recommendation-section{
+
+    border-top:1px solid rgba(31,90,72,.06);
+
+}
+
+.audit-cta{
+
+    border-top:1px solid rgba(31,90,72,.06);
+
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+@keyframes reportFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .website-audit-page .container{
+
+        width:min(100%,calc(100% - 32px));
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .website-audit-page .container{
+
+        width:calc(100% - 24px);
+
+    }
+
+}

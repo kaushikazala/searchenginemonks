@@ -1,0 +1,221 @@
+/* ==========================================================
+   AUDIT HERO
+========================================================== */
+
+.audit-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+    padding:180px 0 120px;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(31,90,72,.10),
+        transparent 45%),
+
+        radial-gradient(circle at bottom right,
+        rgba(220,178,74,.10),
+        transparent 40%),
+
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #FAFAF8
+        );
+
+}
+
+/* ==========================================================
+   BACKGROUND
+========================================================== */
+
+.audit-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+
+    height:520px;
+
+    top:-220px;
+
+    right:-180px;
+
+    border-radius:50%;
+
+    background:rgba(31,90,72,.05);
+
+}
+
+.audit-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:340px;
+
+    height:340px;
+
+    bottom:-140px;
+
+    left:-100px;
+
+    border-radius:50%;
+
+    background:rgba(220,178,74,.08);
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.audit-hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.audit-hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(31,90,72,.08);
+
+    color:var(--moss);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+.audit-hero h1{
+
+    margin-top:24px;
+
+    font-size:clamp(2.8rem,6vw,4.8rem);
+
+    line-height:1.1;
+
+}
+
+.audit-hero p{
+
+    max-width:700px;
+
+    margin:28px auto 0;
+
+    color:var(--muted);
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================================
+   FEATURES
+========================================================== */
+
+.audit-hero-features{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:48px;
+
+}
+
+.audit-feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 20px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid rgba(31,90,72,.08);
+
+    box-shadow:
+        0 10px 30px rgba(31,90,72,.05);
+
+}
+
+.audit-feature svg{
+
+    color:var(--moss);
+
+}
+
+.audit-feature span{
+
+    font-weight:500;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .audit-hero{
+
+        padding:150px 0 90px;
+
+    }
+
+    .audit-hero-features{
+
+        gap:12px;
+
+    }
+
+    .audit-feature{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}

@@ -1,0 +1,234 @@
+/* ==========================================================
+   AUDIT CTA
+========================================================== */
+
+.audit-cta{
+    padding:120px 0;
+}
+
+/* ==========================================================
+   WRAPPER
+========================================================== */
+
+.audit-cta-wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:80px;
+
+    border-radius:32px;
+
+    background:
+        linear-gradient(
+            135deg,
+           var(--moss) ,
+            #2c7a63
+        );
+
+    color:#fff;
+
+    text-align:center;
+
+    isolation:isolate;
+
+}
+
+.audit-cta-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:auto -120px -120px auto;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.audit-cta-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-80px;
+
+    left:-80px;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.audit-cta-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    letter-spacing:.06em;
+
+    text-transform:uppercase;
+
+}
+
+.audit-cta h2{
+
+    max-width:700px;
+
+    margin:24px auto 0;
+
+    font-size:clamp(2.2rem,5vw,3.6rem);
+
+    line-height:1.15;
+
+}
+
+.audit-cta p{
+
+    max-width:640px;
+
+    margin:24px auto 0;
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.9;
+
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.audit-cta-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-top:42px;
+
+    flex-wrap:wrap;
+
+}
+
+.audit-cta-actions button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:16px 28px;
+
+    border:none;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.35s ease;
+
+}
+
+.btn-primary{
+
+    background:#fff;
+
+    color:var(--moss);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    background:transparent;
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.22) !important;
+
+}
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .audit-cta{
+
+        padding:90px 0;
+
+    }
+
+    .audit-cta-wrapper{
+
+        padding:56px 28px;
+
+    }
+
+    .audit-cta-actions{
+
+        flex-direction:column;
+
+    }
+
+    .audit-cta-actions button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}

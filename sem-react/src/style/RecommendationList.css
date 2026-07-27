@@ -1,0 +1,289 @@
+/* ==========================================================
+   RECOMMENDATION SECTION
+========================================================== */
+
+.recommendation-section{
+
+    padding:120px 0;
+
+    background:#FAFAF8;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.recommendation-header{
+
+    max-width:720px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.recommendation-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(31,90,72,.08);
+
+    color:var(--moss);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+.recommendation-header h2{
+
+    margin-top:20px;
+
+    font-size:clamp(2rem,5vw,3.2rem);
+
+    line-height:1.2;
+
+}
+
+.recommendation-header p{
+
+    max-width:620px;
+
+    margin:20px auto 0;
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.recommendation-list{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+/* ==========================================================
+   ITEM
+========================================================== */
+
+.recommendation-item{
+
+    display:grid;
+
+    grid-template-columns:70px 1fr auto;
+
+    gap:28px;
+
+    align-items:flex-start;
+
+    padding:34px 0;
+
+    border-top:1px solid rgba(31,90,72,.08);
+
+    transition:.35s ease;
+
+}
+
+.recommendation-item:last-child{
+
+    border-bottom:1px solid rgba(31,90,72,.08);
+
+}
+
+.recommendation-item:hover{
+
+    padding-left:14px;
+
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.recommendation-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:rgba(31,90,72,.08);
+
+}
+
+.recommendation-icon svg{
+
+    color:var(--moss);
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.recommendation-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+
+.priority{
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:.04em;
+
+    text-transform:uppercase;
+
+}
+
+.priority.high{
+
+    background:#FFE9E6;
+
+    color:#D94841;
+
+}
+
+.priority.medium{
+
+    background:#FFF5DD;
+
+    color:#C88600;
+
+}
+
+.priority.low{
+
+    background:#E9F8EE;
+
+    color:#23874A;
+
+}
+
+.priority.info{
+
+    background:#E8F2FF;
+
+    color:#2563EB;
+
+}
+
+.category{
+
+    color:var(--muted);
+
+    font-size:.95rem;
+
+}
+
+.recommendation-content h3{
+
+    margin-top:18px;
+
+    font-size:1.3rem;
+
+    line-height:1.4;
+
+}
+
+.recommendation-content p{
+
+    margin-top:14px;
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+    max-width:650px;
+
+}
+
+/* ==========================================================
+   ARROW
+========================================================== */
+
+.recommendation-arrow{
+
+    margin-top:8px;
+
+    color:var(--moss);
+
+    transition:.35s ease;
+
+}
+
+.recommendation-item:hover .recommendation-arrow{
+
+    transform:translate(6px,-4px);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .recommendation-section{
+
+        padding:90px 0;
+
+    }
+
+    .recommendation-item{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .recommendation-arrow{
+
+        display:none;
+
+    }
+
+}

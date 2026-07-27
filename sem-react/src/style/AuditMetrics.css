@@ -1,0 +1,221 @@
+/* ==========================================================
+   AUDIT METRICS
+========================================================== */
+
+.audit-metrics{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.audit-metrics-header{
+
+    max-width:720px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.audit-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(31,90,72,.08);
+
+    color:var(--moss);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+.audit-metrics-header h2{
+
+    margin-top:20px;
+
+    font-size:clamp(2rem,5vw,3.2rem);
+
+    line-height:1.2;
+
+}
+
+.audit-metrics-header p{
+
+    max-width:620px;
+
+    margin:20px auto 0;
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.audit-metrics-list{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+/* ==========================================================
+   ROW
+========================================================== */
+
+.audit-metric{
+
+    display:grid;
+
+    grid-template-columns:1fr auto;
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:30px 0;
+
+    border-top:1px solid rgba(31,90,72,.08);
+
+    transition:all .35s ease;
+
+}
+
+.audit-metric:last-child{
+
+    border-bottom:1px solid rgba(31,90,72,.08);
+
+}
+
+.audit-metric:hover{
+
+    padding-left:12px;
+
+}
+
+/* ==========================================================
+   LEFT
+========================================================== */
+
+.audit-metric-left h3{
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+.audit-metric-left span{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:.95rem;
+
+    color:var(--muted);
+
+}
+
+/* ==========================================================
+   RIGHT
+========================================================== */
+
+.audit-metric-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.audit-metric-right strong{
+
+    min-width:70px;
+
+    text-align:right;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--moss);
+
+}
+
+.audit-metric-right svg{
+
+    color:var(--moss);
+
+    transition:transform .3s ease;
+
+}
+
+.audit-metric:hover .audit-metric-right svg{
+
+    transform:translate(4px,-4px);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .audit-metrics{
+
+        padding:90px 0;
+
+    }
+
+    .audit-metric{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .audit-metric-right{
+
+        justify-content:space-between;
+
+    }
+
+    .audit-metric-right strong{
+
+        text-align:left;
+
+    }
+
+}

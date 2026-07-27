@@ -16,6 +16,7 @@ import PortfolioPage from "./pages/PortfolioPage";
 import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
+import WebsiteAudit from "./pages/WebsiteAudit";
 
 function LandingPage() {
   return (
@@ -46,6 +47,10 @@ export default function App() {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route
+  path="/website-audit"
+  element={<WebsiteAudit />}
+/>
         </Routes>
       </main>
 

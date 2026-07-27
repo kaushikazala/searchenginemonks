@@ -1,0 +1,203 @@
+/* ==========================================================
+   AUDIT LOADING
+========================================================== */
+
+.audit-loading {
+    padding: 120px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Reset in case a global .container class applies flex/grid rules
+   from elsewhere in the site — this section always needs a plain
+   block container so the wrapper below can control its own layout. */
+.audit-loading > .container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================
+   WRAPPER
+========================================================== */
+
+.audit-loading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.audit-loading-wrapper > * {
+    width: 100%;
+}
+
+/* ==========================================================
+   BADGE
+========================================================== */
+
+.audit-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(31, 90, 72, .08);
+    color: var(--moss);
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+/* ==========================================================
+   HEADING
+========================================================== */
+
+.audit-loading-wrapper h2 {
+    margin-top: 22px;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--ink);
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.audit-loading-wrapper p {
+    max-width: 620px;
+    margin: 22px auto 42px;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* ==========================================================
+   SPINNER
+========================================================== */
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.loading-spinner svg {
+    color: var(--moss);
+    animation: spin 1.4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================================
+   PROGRESS BAR
+========================================================== */
+
+.loading-progress {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: #ececec;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.loading-progress span {
+    display: block;
+    height: 100%;
+    width: 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--moss), #53b28c);
+    transition: width .7s ease;
+}
+
+/* ==========================================================
+   STEPS
+========================================================== */
+
+.loading-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    text-align: left;
+}
+
+.loading-step {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    color: var(--muted);
+    transition: .35s ease;
+}
+
+.loading-step svg {
+    flex-shrink: 0;
+}
+
+.loading-step.completed {
+    color: var(--moss);
+    font-weight: 600;
+}
+
+.loading-step.completed svg {
+    color: var(--moss);
+}
+
+.loading-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(31, 90, 72, .15);
+    flex-shrink: 0;
+}
+
+.loading-icon {
+    animation: spin 1.2s linear infinite;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px) {
+    .audit-loading {
+        padding: 90px 0;
+    }
+
+    .audit-loading-wrapper h2 {
+        font-size: 2rem;
+    }
+
+    .audit-loading-wrapper p {
+        max-width: 100%;
+        margin: 18px auto 36px;
+        font-size: .98rem;
+        line-height: 1.8;
+    }
+
+    .loading-step {
+        font-size: .95rem;
+    }
+}
