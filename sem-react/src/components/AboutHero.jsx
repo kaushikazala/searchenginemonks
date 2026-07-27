@@ -1,5 +1,6 @@
 import "../style/AboutHero.css";
 import { ArrowRight, Users, Award, Briefcase, Star } from "lucide-react";
+import monk from "../assests/Monk-2.svg";
 
 export default function AboutHero() {
   return (
@@ -58,7 +59,7 @@ export default function AboutHero() {
             <div className="hero-circle"></div>
 
             <img
-              src="/images/monk.png"
+              src={monk}
               alt="Monk"
               className="hero-monk"
             />

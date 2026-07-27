@@ -1,0 +1,417 @@
+/* ==========================================================
+   WHY CHOOSE US
+========================================================== */
+
+.whyus-premium{
+    padding:100px 0;
+    background:#fff;
+    position:relative;
+    overflow:hidden;
+}
+
+.whyus-premium::before{
+    content:"";
+    position:absolute;
+    top:-180px;
+    left:-120px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:rgba(31,90,72,.05);
+    filter:blur(70px);
+}
+
+.whyus-premium::after{
+    content:"";
+    position:absolute;
+    bottom:-160px;
+    right:-120px;
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    background:rgba(212,166,61,.08);
+    filter:blur(70px);
+}
+
+/* ==========================================================
+   Layout
+========================================================== */
+
+.whyus-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+    margin-top:70px;
+}
+
+/* ==========================================================
+   Brand name accent (in heading)
+========================================================== */
+
+.whyus-brand-name{
+    color:var(--moss);
+}
+
+/* ==========================================================
+   Feature List (right side)
+========================================================== */
+
+.whyus-features-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.whyus-feature-row{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+
+    padding:20px 22px;
+
+    border-radius:20px;
+    border:1px solid rgba(31,90,72,.08);
+    background:#fff;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.whyus-feature-row:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 42px rgba(18,31,25,.08);
+    border-color:rgba(200,147,31,.24);
+}
+
+.wf-icon-wrap{
+    width:56px;
+    height:56px;
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+    background:linear-gradient(135deg, rgba(31,90,72,.1), rgba(200,147,31,.14));
+    color:var(--moss);
+    font-size:22px;
+}
+
+.wf-content{
+    flex:1;
+}
+
+.wf-title{
+    margin-bottom:6px;
+    color:var(--ink);
+    font-family:var(--font-display);
+    font-size:19px;
+    line-height:1.3;
+}
+
+.wf-text{
+    margin:0;
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.75;
+}
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.whyus-cta-row{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-top:36px;
+    flex-wrap:wrap;
+}
+
+.whyus-cta-note{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--muted);
+    font-size:14px;
+}
+
+.whyus-cta-note i{
+    color:var(--moss);
+}
+
+/* ==========================================================
+   Right Visual
+========================================================== */
+
+.whyus-visual-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    padding: 30px 0 80px;
+}
+
+.wv-blob{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(60px);
+    z-index:0;
+    pointer-events:none;
+}
+
+.wv-blob-1{
+    width:260px;
+    height:260px;
+    top:-40px;
+    left:-40px;
+    background:rgba(31,90,72,.10);
+}
+
+.wv-blob-2{
+    width:220px;
+    height:220px;
+    bottom:-30px;
+    right:-30px;
+    background:rgba(200,147,31,.12);
+}
+
+.enso-monk-stack {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    /* height = width via aspect-ratio */
+     aspect-ratio: 760.0611 / 1024.4845;
+}
+
+/* SVG rings fill the whole square and spin */
+.whyus-enso {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.whyus-enso svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Individual ring animations */
+.enso-gold {
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: ensoRotateCW 10s linear infinite;
+}
+
+.enso-moss {
+    transform-box: fill-box;
+    transform-origin: center center;
+    animation: ensoRotateCCW 14s linear infinite;
+}
+
+@keyframes ensoRotateCW {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes ensoRotateCCW {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(-360deg); }
+}
+
+/* Monk image — fills the square, always contained, never crops */
+.whyus-monk-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 5;
+    animation: whyFloat 6s ease-in-out infinite;
+    filter: drop-shadow(0 24px 48px rgba(0,0,0,.15));
+}
+
+@keyframes whyFloat {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-10px); }
+}
+
+/* ==========================================================
+   Floating Cards (unused currently, kept for future use)
+========================================================== */
+
+.whyus-floating-card{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 18px;
+    border-radius:16px;
+    background:rgba(255,255,255,.82);
+    backdrop-filter:blur(10px);
+    box-shadow:0 16px 40px rgba(0,0,0,.10);
+    animation:whyCardFloat 6s ease-in-out infinite;
+    z-index:10;
+}
+
+.whyus-floating-card i{
+    color:var(--gold);
+    font-size:18px;
+}
+
+.whyus-floating-card strong{
+    display:block;
+    color:var(--ink);
+    font-size:14px;
+}
+
+.whyus-floating-card span{
+    display:block;
+    color:var(--muted);
+    font-size:12px;
+}
+
+.card-top{
+    top:10%;
+    right:0;
+}
+
+.card-middle{
+    left:0;
+    top:36%;
+    animation-delay:.8s;
+}
+
+.card-bottom{
+    bottom:8%;
+    right:8%;
+    animation-delay:1.6s;
+}
+
+@keyframes whyCardFloat{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-8px); }
+}
+
+/* ==========================================================
+   Metrics
+========================================================== */
+
+.wv-metrics{
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    z-index: 20;
+}
+
+.wv-metric-chip{
+    min-width:120px;
+    padding:16px;
+    text-align:center;
+    background:#fff;
+    border-radius:18px;
+    border:1px solid rgba(31,90,72,.08);
+    box-shadow:0 14px 35px rgba(0,0,0,.08);
+}
+
+.wv-metric-value{
+    display:block;
+    margin:0;
+    font-family:var(--font-display);
+    font-size:24px;
+    font-weight:600;
+    color:var(--moss);
+}
+
+.wv-metric-label{
+    display:block;
+    font-size:13px;
+    color:var(--muted);
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+/* Tablet */
+@media(max-width:991px){
+    .whyus-premium { padding: 80px 0; }
+
+    .whyus-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .enso-monk-stack { max-width: 320px; }
+
+    .wv-metrics { max-width: 320px; }
+
+    .whyus-cta-row { justify-content: center; }
+}
+
+/* Large phones */
+@media(max-width:768px){
+    .whyus-premium { padding: 70px 0; }
+
+    .whyus-feature-row { padding: 18px; }
+
+    .wf-icon-wrap {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .wf-title { font-size: 17px; }
+
+    .whyus-floating-card { display: none; }
+
+    .enso-monk-stack { max-width: 280px; }
+
+    .wv-metrics {
+        max-width: 280px;
+        gap: 10px;
+    }
+
+    .wv-metric-chip {
+        min-width: auto;
+        padding: 12px 10px;
+    }
+
+    .wv-metric-value { font-size: 20px; }
+}
+
+/* Small phones */
+@media(max-width:576px){
+    .whyus-premium { padding: 60px 0; }
+
+    .enso-monk-stack { max-width: 240px; }
+
+    .wv-metrics {
+        max-width: 240px;
+        gap: 8px;
+    }
+
+    .wv-metric-chip {
+        padding: 10px 8px;
+    }
+
+    .wv-metric-value { font-size: 18px; }
+}
+
+/* Extra small */
+@media(max-width:380px){
+    .enso-monk-stack { max-width: 200px; }
+    .wv-metrics { max-width: 200px; }
+}

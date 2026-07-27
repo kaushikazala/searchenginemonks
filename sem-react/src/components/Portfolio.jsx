@@ -1,6 +1,7 @@
+import "../style/Portfolio.css";
 import Reveal from './Reveal.jsx';
 import { portfolio } from '../data/content.js';
-import "./Portfolio.css";
+
 
 const portfolioMeta = [
   { result: '+214% Traffic', bg: 'linear-gradient(135deg, #1F5A48 0%, #2D7A63 100%)' },

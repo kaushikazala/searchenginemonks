@@ -1,0 +1,87 @@
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: var(--bg);
+}
+
+.contact-form {
+    background: var(--card-bg);
+    padding: 42px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lift);
+    border: 1px solid rgba(20, 35, 27, 0.06);
+}
+
+.contact-trust-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 24px;
+}
+
+.contact-trust-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(47, 107, 79, 0.16);
+    color: var(--moss-deep);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.contact-trust-pill i {
+    color: var(--gold);
+}
+
+.contact-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--gold-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.contact-item h6 {
+    margin: 0;
+    font-weight: 600;
+    font-family: var(--font-body);
+    color: var(--ink);
+}
+
+.contact-item p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.form-control {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(20, 35, 27, 0.12);
+    background: var(--parchment);
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: var(--moss);
+    box-shadow: 0 0 0 4px rgba(47, 107, 79, 0.12);
+    background: var(--white);
+}
+
+textarea {
+    resize: none;
+}

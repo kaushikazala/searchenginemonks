@@ -18,7 +18,7 @@ import OurProcess from "../components/OurProcess";
 export default function ServicesPage() {
   return (
     <>
-      <Navbar />
+
 
       <ServicesHero />
 

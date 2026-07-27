@@ -1,0 +1,266 @@
+/* ==========================================================
+   TESTIMONIALS SECTION
+========================================================== */
+
+.testi-premium {
+  padding: 100px 0;
+  background: #fafaf8;
+}
+
+.testi-summary-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin: 50px 0 70px;
+}
+
+.tsb-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tsb-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--parchment);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--moss);
+  font-size: 16px;
+}
+
+.tsb-value {
+  display: block;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.tsb-label {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.testi-card-premium {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 28px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .05);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, .05);
+  overflow: hidden;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.testi-card-premium:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, .10);
+}
+
+.tc-quote-mark {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  font-size: 60px;
+  line-height: 1;
+  color: var(--gold);
+  opacity: .15;
+  font-family: Georgia, serif;
+}
+
+.tc-stars {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 18px;
+  color: #F5A623;
+  font-size: 14px;
+}
+
+.tc-stars i {
+  margin-right: 2px;
+}
+
+.tc-text {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.tc-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+
+.tc-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--parchment);
+}
+
+.tc-author-info {
+  flex: 1;
+}
+
+.tc-author-info h6 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.tc-author-info span {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.tc-verified {
+  color: #4CAF50;
+  font-size: 16px;
+}
+
+.testi-platform-strip {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.tps-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.tps-logos {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.tps-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  opacity: .65;
+}
+
+.tps-logo i {
+  font-size: 16px;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .testi-premium {
+    padding: 80px 0;
+  }
+
+  .testi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testi-summary-bar {
+    gap: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .testi-premium {
+    padding: 70px 0;
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .testi-summary-bar {
+    flex-direction: column;
+    gap: 22px;
+    margin: 40px 0 50px;
+  }
+
+  .testi-card-premium {
+    padding: 28px 24px;
+  }
+
+  .testi-platform-strip {
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .testi-premium {
+    padding: 60px 0;
+  }
+
+  .testi-card-premium {
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+
+  .tc-text {
+    font-size: 14px;
+  }
+
+  .tc-author {
+    gap: 12px;
+  }
+
+  .tc-avatar {
+    width: 42px;
+    height: 42px;
+  }
+
+  .tsb-value {
+    font-size: 20px;
+  }
+
+  .tsb-label {
+    font-size: 11px;
+  }
+
+}

@@ -4,7 +4,7 @@
 
 .contact-hero{
     position:relative;
-    padding:140px 0 110px;
+     padding: 90px 0 70px;
     background:#FAFAF8;
     overflow:hidden;
 }
@@ -208,7 +208,7 @@ justify-content:center;
 @media(max-width:768px){
 
 .contact-hero{
-padding:110px 0 80px;
+padding:70px 0 40px;
 }
 
 .contact-visual{

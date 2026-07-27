@@ -25,16 +25,16 @@ export default function StorySection() {
               <div className="story-glow"></div>
 
               <img
-                src="/images/monk.png"
+                src="./src/assests/monk-1.jpeg"
                 alt="Search Engine Monks"
               />
 
             </div>
 
-            <div className="experience-card">
+            {/* <div className="experience-card">
               <h2>10+</h2>
               <span>Years of Combined Experience</span>
-            </div>
+            </div> */}
 
           </div>
 

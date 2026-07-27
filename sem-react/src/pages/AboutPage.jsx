@@ -10,8 +10,7 @@ import AboutCTA from "../components/AboutCTA";
 export default function AboutPage() {
   return (
     <>
-      <Navbar />
-
+    
       <AboutHero />
 
       <StorySection/>

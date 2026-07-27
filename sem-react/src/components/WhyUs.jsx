@@ -1,7 +1,8 @@
+import "../style/WhyUs.css";
 import Reveal from './Reveal.jsx';
 import { features } from '../data/content.js';
 import monk from '../assests/Monk-2.svg';
-import "./WhyUs.css";
+
 
 const metrics = [
   { value: '214%', label: 'Avg. Traffic Increase' },
@@ -25,10 +26,12 @@ export default function WhyUs() {
 
               {/* Enso rings + monk, grouped so they can overlap on mobile */}
               <div className="enso-monk-stack">
-                <div className="enso whyus-enso" aria-hidden="true">
+                <div className="whyus-enso" aria-hidden="true">
                   <svg viewBox="0 0 300 300" width="100%" height="100%">
-                    <circle className="enso-circle enso-gold" cx="150" cy="150" r="126" strokeWidth="2.5" transform="rotate(-60 150 150)"></circle>
-                    <circle className="enso-circle enso-moss" cx="150" cy="150" r="112" strokeWidth="7" transform="rotate(-30 150 150)"></circle>
+                    {/* outer gold ring — rotates clockwise via CSS */}
+                    <circle className="enso-gold" cx="150" cy="150" r="126" fill="none" stroke="#C8931F" strokeWidth="2.5" strokeDasharray="60 720" />
+                    {/* inner moss ring — rotates counter-clockwise via CSS */}
+                    <circle className="enso-moss" cx="150" cy="150" r="112" fill="none" stroke="#1F5A48" strokeWidth="7" strokeDasharray="40 660" />
                   </svg>
                 </div>
 

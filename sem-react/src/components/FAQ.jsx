@@ -1,3 +1,4 @@
+import "./FAQ.css";
 import { useState } from 'react';
 import Reveal from './Reveal.jsx';
 import { faqs } from '../data/content.js';

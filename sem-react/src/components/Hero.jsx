@@ -1,7 +1,8 @@
+import "../style/Hero.css";
 import Reveal from './Reveal.jsx';
 import StatCounter from './StatCounter.jsx';
 import monk from '../assests/Monk-2.svg';
-import "./Hero.css";
+
 
 const stats = [
   { icon: 'fa-solid fa-briefcase', to: 100, suffix: '+', label: 'Projects Completed' },
@@ -23,7 +24,7 @@ const floatingCards = [
   { icon: 'fa-solid fa-bolt', label: 'Better Performance', position: 'fc-3' },
   { icon: 'fa-solid fa-mobile-screen', label: 'Mobile Friendly', position: 'fc-4' },
   { icon: 'fa-solid fa-star', label: '5 ★ Reviews', position: 'fc-5' },
-  { icon: 'fa-brands fa-google', label: 'Google Visibility', position: 'fc-6' },
+
 ];
 
 // Decorative mandala / flower SVG
@@ -116,11 +117,7 @@ export default function Hero() {
               <a href="#portfolio" className="btn btn-outline-premium">View Case Studies <span className="btn-arrow">→</span></a>
             </Reveal>
             
-            {/* <Reveal delay={2}>
-                <div className="commitment-text mt-2">
-                    <i className="fa-solid fa-shield-halved"></i> No Commitment. No Obligation.
-                </div>
-            </Reveal> */}
+           
 
             <Reveal className="hero-trust-list-premium mt-4" delay={2}>
               {trustPoints.map((point) => (
@@ -131,32 +128,9 @@ export default function Hero() {
               ))}
             </Reveal>
 
-            {/* <Reveal className="trusted-strip-premium mt-4" delay={3}>
-              <div className="trusted-text text-center">Trusted by businesses &amp; brands across Canada</div>
-              <div className="trusted-logos-premium mt-3" aria-hidden>
-                <i className="fab fa-google fa-lg" title="Google Partner"></i>
-                <i className="fab fa-shopify fa-lg" title="Shopify"></i>
-                <i className="fab fa-wordpress fa-lg" title="WordPress"></i>
-                <i className="fab fa-hubspot fa-lg" title="HubSpot"></i>
-                <span className="clutch-logo">Clutch <span className="clutch-stars">★★★★★</span></span>
-                <i className="fas fa-circle fa-lg" title="UpCity"></i>
-              </div>
-            </Reveal> */}
-
-            {/* <Reveal className="canada-row-premium mt-3" delay={3}>
-              <div className="canada-label-premium"><span className="flag">🇨🇦</span> Proudly helping businesses across Canada</div>
-              <div className="city-chips-premium">
-                <span><span className="city-dot"></span>Toronto</span>
-                <span><span className="city-dot"></span>Vancouver</span>
-                <span><span className="city-dot"></span>Calgary</span>
-                <span><span className="city-dot"></span>Ottawa</span>
-                <span><span className="city-dot"></span>Montreal</span>
-              </div>
-            </Reveal> */}
+        
           </div>
 
-        
-          {/* Right Image */}
 {/* Right Image */}
 <div className="col-lg-6 text-center hero-right-content">
   <Reveal delay={1} className="hero-visual-stage">
@@ -166,11 +140,6 @@ export default function Hero() {
       {/* Background Glow */}
       <div className="hero-glow-core"></div>
 
-      {/* Premium Orbit Rings */}
-      {/* <div className="orbit orbit-1"></div>
-      {/* <div className="orbit orbit-2"></div> */}
-      {/* <div className="orbit orbit-3"></div> */}
-
       {/* Orbit Nodes */}
       <span className="orbit-node node1"></span>
       <span className="orbit-node node2"></span>
@@ -179,18 +148,29 @@ export default function Hero() {
       <span className="orbit-node node5"></span>
       <span className="orbit-node node6"></span>
 
+      {/* Enso Rings + Monk stacked */}
+      <div className="enso-monk-stack hero-enso-stack">
+        {/* Animated enso rings */}
+        <div className="whyus-enso" aria-hidden="true">
+          <svg viewBox="0 0 300 300" width="100%" height="100%">
+            <circle className="enso-gold" cx="150" cy="150" r="126" fill="none" stroke="#C8931F" strokeWidth="2.5" strokeDasharray="60 720" />
+            <circle className="enso-moss" cx="150" cy="150" r="112" fill="none" stroke="#1F5A48" strokeWidth="7" strokeDasharray="40 660" />
+          </svg>
+        </div>
+
+        {/* Monk */}
+        <img
+          src={monk}
+          alt="Digital Marketing illustration"
+          className="whyus-monk-img hero-monk-img"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
+      </div>
+
       {/* Existing Dashed Ring */}
       <div className="hero-rotating-dashed-ring"></div>
-
-      {/* Monk */}
-      <img
-        src={monk}
-        alt="Digital Marketing illustration"
-        className="hero-image-premium"
-        loading="eager"
-        decoding="async"
-        fetchPriority="high"
-      />
 
       {/* Floating Cards */}
       {floatingCards.map((card) => (
@@ -205,50 +185,9 @@ export default function Hero() {
         </div>
       ))}
 
-      {/* SEO Overlay Card */}
-      <div className="hero-overlay-card-premium">
-        <div className="overlay-icon">
-          <i className="fa-solid fa-shield-halved"></i>
-        </div>
-
-        <div className="overlay-text-content">
-          <h4>100% White-Hat SEO</h4>
-          <p>Ethical growth strategies, built for results that hold.</p>
-        </div>
-      </div>
-
     </div>
 
   </Reveal>
-
-  {/* Testimonial */}
-  {/* <Reveal delay={2} className="testimonial-wrap">
-    <div className="glass-card testimonial-card-hero-premium">
-
-      <div className="testimonial-quotes">"</div>
-
-      <div className="testimonial-stars">
-        ★★★★★
-      </div>
-
-      <div className="testimonial-text">
-        Search Engine Monks helped us increase our organic traffic by 214% in just 6 months!
-      </div>
-
-      <div className="testimonial-author">
-        <img
-          src="https://i.pravatar.cc/100?img=11"
-          alt="David L."
-        />
-
-        <div className="testimonial-author-info">
-          <h6>David L.</h6>
-          <p>E-commerce Business, Toronto</p>
-        </div>
-      </div>
-
-    </div>
-  </Reveal> */}
 
 </div>
         </div>

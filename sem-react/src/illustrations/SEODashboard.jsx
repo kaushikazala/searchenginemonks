@@ -21,7 +21,7 @@ export default function SEODashboard() {
           />
         </svg>
       </div>
-
+<div className="service-visual">
       <div className="metrics">
         <div className="metric-card">
           <h3>+250%</h3>
@@ -42,7 +42,9 @@ export default function SEODashboard() {
           <h3>98%</h3>
           <span>SEO Score</span>
         </div>
-      </div>
-    </div>
+        
+</div>
+</div>
+      </div>  
   );
 }

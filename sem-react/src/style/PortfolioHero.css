@@ -1,7 +1,7 @@
 .portfolio-hero{
     position:relative;
     overflow:hidden;
-    padding:140px 0 110px;
+ padding: 90px 0 70px;
     background:#FAFAF8;
 }
 
@@ -201,7 +201,7 @@ justify-content:center;
 @media(max-width:768px){
 
 .portfolio-hero{
-padding:110px 0 80px;
+padding:70px 0 40px;
 }
 
 .portfolio-visual{

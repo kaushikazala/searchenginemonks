@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     background: #FAFAF8;
-
+     padding: 90px 0 70px;
 }
 
 .services-hero-container {
@@ -15,12 +15,12 @@
 .hero-content {
     flex: 1;
     position: relative;
-    z-index: 2;
+    z-index: 2; 
 }
 
 .hero-tag {
     display: inline-block;
-    background: rgba(212,166,61,.15);
+    background: rgba(212, 166, 61, .15);
     color: #b68622;
     padding: 10px 22px;
     border-radius: 999px;
@@ -99,66 +99,115 @@
     color: #777;
 }
 
-.hero-visual {
-    flex: 1;
-    position: relative;
-    display: flex;
-    justify-content: center;
+.hero-visual{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.main-card {
-    width: 520px;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 30px 70px rgba(0,0,0,.12);
-    background: white;
-    animation: float 6s ease-in-out infinite;
+.main-card{
+    width:700px;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+    z-index:2;
 }
-
 .main-card img {
     width: 100%;
     display: block;
 }
+/* ==========================================
+   PREMIUM FLOATING CARDS
+========================================== */
 
-.floating-card {
-    position: absolute;
-    background: rgba(255,255,255,.85);
-    backdrop-filter: blur(18px);
-    padding: 14px 22px;
-    border-radius: 18px;
-    box-shadow: 0 12px 40px rgba(0,0,0,.08);
-    font-weight: 600;
+.floating-card{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:14px 20px;
+
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(18px);
+
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.6);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+    white-space:nowrap;
+
+    transition:.35s;
+    z-index:5;
 }
 
-.card1 {
-    top: 5%;
-    left: -40px;
-    animation: float 4s ease-in-out infinite;
+.floating-card:hover{
+    transform:translateY(-8px) scale(1.04);
 }
 
-.card2 {
-    right: -20px;
-    top: 18%;
-    animation: float 5s ease-in-out infinite;
+/* ==============================
+   RANDOM POSITIONS
+=================================*/
+
+.card1{
+    top:-45px;
+    left:-80px;
+    transform:rotate(-10deg);
+    animation:float1 5s ease-in-out infinite;
 }
 
-.card3 {
-    left: -30px;
-    bottom: 20%;
-    animation: float 6s ease-in-out infinite;
+.card2{
+    top:80px;
+    right:-90px;
+    transform:rotate(8deg);
+    animation:float2 6s ease-in-out infinite;
 }
 
-.card4 {
-    right: -10px;
-    bottom: 5%;
-    animation: float 4.5s ease-in-out infinite;
+.card3{
+    bottom:60px;
+    left:-100px;
+    transform:rotate(-7deg);
+    animation:float3 5.5s ease-in-out infinite;
+}
+
+.card4{
+   bottom:-30px;
+    right:-70px;
+     transform:rotate(10deg);
+    animation:float4 6.5s ease-in-out infinite;
+}
+
+/* ==============================
+   INDIVIDUAL FLOAT ANIMATION
+=================================*/
+
+@keyframes float1{
+    0%,100%{transform:translateY(0) rotate(-8deg);}
+    50%{transform:translateY(-12px) rotate(-10deg);}
+}
+
+@keyframes float2{
+    0%,100%{transform:translateY(0) rotate(6deg);}
+    50%{transform:translateY(-15px) rotate(8deg);}
+}
+
+@keyframes float3{
+    0%,100%{transform:translateY(0) rotate(-5deg);}
+    50%{transform:translateY(-10px) rotate(-8deg);}
+}
+
+@keyframes float4{
+    0%,100%{transform:translateY(0) rotate(7deg);}
+    50%{transform:translateY(-13px) rotate(10deg);}
 }
 
 .hero-bg-gradient {
     position: absolute;
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle,#d4a63d30,transparent 70%);
+    background: radial-gradient(circle, #d4a63d30, transparent 70%);
     top: -250px;
     right: -120px;
 }
@@ -172,7 +221,7 @@
 .blob-1 {
     width: 280px;
     height: 280px;
-    background: rgba(212,166,61,.18);
+    background: rgba(212, 166, 61, .18);
     left: -120px;
     top: 120px;
 }
@@ -180,7 +229,7 @@
 .blob-2 {
     width: 320px;
     height: 320px;
-    background: rgba(169,201,183,.20);
+    background: rgba(169, 201, 183, .20);
     right: -100px;
     bottom: 0;
 }
@@ -188,105 +237,106 @@
 .blob-3 {
     width: 180px;
     height: 180px;
-    background: rgba(255,216,138,.30);
+    background: rgba(255, 216, 138, .30);
     top: 50%;
     left: 45%;
 }
 
 @keyframes float {
 
-    0%{
-        transform:translateY(0);
+    0% {
+        transform: translateY(0);
     }
 
-    50%{
-        transform:translateY(-15px);
+    50% {
+        transform: translateY(-15px);
     }
 
-    100%{
-        transform:translateY(0);
+    100% {
+        transform: translateY(0);
     }
 
 }
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-.services-hero-container{
-flex-direction:column;
-text-align:center;
-}
+    .services-hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.hero-content h1{
-font-size:46px;
-}
+    .hero-content h1 {
+        font-size: 46px;
+    }
 
-.hero-buttons{
-justify-content:center;
-}
+    .hero-buttons {
+        justify-content: center;
+    }
 
-.hero-stats{
-justify-content:center;
-flex-wrap:wrap;
-}
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-.main-card{
-width:100%;
-max-width:500px;
-}
+    .main-card {
+        width: 100%;
+        max-width: 500px;
+    }
 
-.floating-card{
-display:none;
-}
-
-}
-
-@media(max-width:576px){
-
-.hero-content h1{
-font-size:38px;
-}
-
-.hero-content p{
-font-size:16px;
-}
-
-.hero-buttons{
-flex-direction:column;
-}
-
-.primary-btn,
-.secondary-btn{
-justify-content:center;
-width:100%;
-}
+    .floating-card {
+        display: none;
+    }
 
 }
+
+@media(max-width:576px) {
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
 /* ==========================================
    Large Tablets (iPad Pro / Landscape)
 ========================================== */
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
 
-    .services-hero{
-        padding:90px 0;
+    .services-hero {
+        padding: 90px 0;
     }
 
-    .services-hero-container{
-        gap:50px;
+    .services-hero-container {
+        gap: 50px;
     }
 
-    .hero-content h1{
-        font-size:52px;
+    .hero-content h1 {
+        font-size: 52px;
     }
 
-    .hero-content p{
-        font-size:17px;
-        max-width:100%;
+    .hero-content p {
+        font-size: 17px;
+        max-width: 100%;
     }
 
-    .main-card{
-        width:100%;
-        max-width:480px;
+    .main-card {
+        width: 100%;
+        max-width: 480px;
     }
 
 }
@@ -296,58 +346,58 @@ width:100%;
    Tablets
 ========================================== */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-    .services-hero{
-        padding:80px 0;
+    .services-hero {
+        padding: 80px 0;
     }
 
-    .services-hero-container{
-        flex-direction:column;
-        text-align:center;
-        gap:60px;
+    .services-hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
     }
 
     .hero-content,
-    .hero-visual{
-        width:100%;
+    .hero-visual {
+        width: 100%;
     }
 
-    .hero-content h1{
-        font-size:44px;
-        line-height:1.2;
+    .hero-content h1 {
+        font-size: 44px;
+        line-height: 1.2;
     }
 
-    .hero-content p{
-        margin:24px auto 0;
-        max-width:650px;
+    .hero-content p {
+        margin: 24px auto 0;
+        max-width: 650px;
     }
 
-    .hero-buttons{
-        justify-content:center;
-        flex-wrap:wrap;
-        margin-top:32px;
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 32px;
     }
 
-    .hero-stats{
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:35px;
-        margin-top:45px;
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 35px;
+        margin-top: 45px;
     }
 
-    .main-card{
-        width:100%;
-        max-width:500px;
+    .main-card {
+        width: 100%;
+        max-width: 500px;
     }
 
-    .floating-card{
-        display:none;
+    .floating-card {
+        display: none;
     }
 
     .hero-bg-gradient,
-    .hero-blob{
-        display:none;
+    .hero-blob {
+        display: none;
     }
 
 }
@@ -357,54 +407,54 @@ width:100%;
    Mobile
 ========================================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .services-hero{
-        padding:65px 0;
+    .services-hero {
+        padding: 65px 0;
     }
 
-    .hero-tag{
-        font-size:13px;
-        padding:8px 18px;
+    .hero-tag {
+        font-size: 13px;
+        padding: 8px 18px;
     }
 
-    .hero-content h1{
-        font-size:36px;
+    .hero-content h1 {
+        font-size: 36px;
     }
 
-    .hero-content p{
-        font-size:16px;
-        line-height:1.8;
+    .hero-content p {
+        font-size: 16px;
+        line-height: 1.8;
     }
 
-    .hero-buttons{
-        flex-direction:column;
-        gap:14px;
+    .hero-buttons {
+        flex-direction: column;
+        gap: 14px;
     }
 
     .primary-btn,
-    .secondary-btn{
-        width:100%;
-        justify-content:center;
-        padding:15px 20px;
+    .secondary-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
     }
 
-    .hero-stats{
-        gap:28px;
-        margin-top:38px;
+    .hero-stats {
+        gap: 28px;
+        margin-top: 38px;
     }
 
-    .hero-stats h2{
-        font-size:28px;
+    .hero-stats h2 {
+        font-size: 28px;
     }
 
-    .hero-stats span{
-        font-size:14px;
+    .hero-stats span {
+        font-size: 14px;
     }
 
-    .main-card{
-        max-width:420px;
-        border-radius:24px;
+    .main-card {
+        max-width: 420px;
+        border-radius: 24px;
     }
 
 }
@@ -414,48 +464,48 @@ width:100%;
    Small Phones
 ========================================== */
 
-@media (max-width:576px){
+@media (max-width:576px) {
 
-    .services-hero{
-        padding:55px 0;
+    .services-hero {
+        padding: 55px 0;
     }
 
-    .hero-tag{
-        font-size:12px;
-        padding:7px 16px;
+    .hero-tag {
+        font-size: 12px;
+        padding: 7px 16px;
     }
 
-    .hero-content h1{
-        font-size:30px;
-        line-height:1.25;
+    .hero-content h1 {
+        font-size: 30px;
+        line-height: 1.25;
     }
 
-    .hero-content p{
-        font-size:15px;
-        margin-top:20px;
+    .hero-content p {
+        font-size: 15px;
+        margin-top: 20px;
     }
 
-    .hero-buttons{
-        margin-top:28px;
+    .hero-buttons {
+        margin-top: 28px;
     }
 
-    .hero-stats{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:24px;
-        margin-top:36px;
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-top: 36px;
     }
 
-    .hero-stats h2{
-        font-size:24px;
+    .hero-stats h2 {
+        font-size: 24px;
     }
 
-    .hero-stats span{
-        font-size:13px;
+    .hero-stats span {
+        font-size: 13px;
     }
 
-    .main-card{
-        border-radius:20px;
+    .main-card {
+        border-radius: 20px;
     }
 
 }
@@ -465,39 +515,39 @@ width:100%;
    iPhone SE / Very Small Phones
 ========================================== */
 
-@media (max-width:390px){
+@media (max-width:390px) {
 
-    .services-hero{
-        padding:45px 0;
+    .services-hero {
+        padding: 45px 0;
     }
 
-    .hero-content h1{
-        font-size:26px;
+    .hero-content h1 {
+        font-size: 26px;
     }
 
-    .hero-content p{
-        font-size:14px;
-        line-height:1.7;
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.7;
     }
 
-    .hero-tag{
-        font-size:11px;
-        padding:6px 14px;
+    .hero-tag {
+        font-size: 11px;
+        padding: 6px 14px;
     }
 
     .primary-btn,
-    .secondary-btn{
-        font-size:14px;
-        padding:14px 18px;
+    .secondary-btn {
+        font-size: 14px;
+        padding: 14px 18px;
     }
 
-    .hero-stats{
-        grid-template-columns:1fr;
-        gap:18px;
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
 
-    .hero-stats h2{
-        font-size:22px;
+    .hero-stats h2 {
+        font-size: 22px;
     }
 
 }

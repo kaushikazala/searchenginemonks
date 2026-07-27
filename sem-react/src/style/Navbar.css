@@ -1,0 +1,224 @@
+/* ============================
+        NAVBAR
+============================ */
+
+.sem-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background: rgba(250, 247, 240, 0.96);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(20, 35, 27, 0.08);
+  transition: box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.sem-navbar.is-scrolled {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================
+        INNER ROW
+============================ */
+
+.sem-nav-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 32px;
+  gap: 24px;
+}
+
+/* ============================
+        LOGO
+============================ */
+
+.sem-logo-link {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sem-logo-img {
+  height: 56px;
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+.sem-navbar.is-scrolled .sem-logo-img {
+  height: 44px;
+}
+
+/* ============================
+        DESKTOP NAV LINKS
+============================ */
+
+.sem-nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.sem-nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.sem-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 2px;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.sem-nav-link:hover,
+.sem-nav-link.active {
+  color: var(--moss);
+}
+
+.sem-nav-link:hover::after,
+.sem-nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* ============================
+        CTA BUTTON
+============================ */
+
+.sem-cta-btn {
+  display: inline-block;
+  background: var(--moss);
+  color: white !important;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 12px;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sem-cta-btn:hover {
+  background: #174535;
+  box-shadow: 0 4px 16px rgba(31, 90, 72, 0.3);
+}
+
+/* ============================
+        HAMBURGER (mobile)
+============================ */
+
+.sem-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--moss, #1F5A48);
+  flex-shrink: 0;
+}
+
+.sem-hamburger:hover {
+  background: rgba(31, 90, 72, 0.08);
+}
+
+/* ============================
+        MOBILE DRAWER
+============================ */
+
+.sem-mobile-drawer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 0 0 20px 20px;
+  padding: 16px 20px 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(20, 35, 27, 0.08);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+.sem-mobile-drawer.open {
+  transform: translateX(0);
+}
+
+.sem-mobile-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+}
+
+.sem-mobile-links .sem-nav-link {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.sem-mobile-links .sem-nav-link:hover,
+.sem-mobile-links .sem-nav-link.active {
+  background: rgba(31, 90, 72, 0.06);
+}
+
+/* ============================
+        RESPONSIVE
+============================ */
+
+@media (max-width: 1023px) {
+  .sem-nav-links {
+    display: none;
+  }
+
+  .sem-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sem-nav-inner {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sem-logo-img {
+    height: 44px;
+  }
+
+  .sem-navbar.is-scrolled .sem-logo-img {
+    height: 38px;
+  }
+
+  .sem-nav-inner {
+    padding: 8px 16px;
+  }
+}

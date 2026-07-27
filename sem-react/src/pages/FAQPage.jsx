@@ -9,7 +9,7 @@ import FAQCTA from "../components/FAQCTA";
 export default function FAQPage() {
   return (
     <>
-      <Navbar />
+ 
 
       <FAQHero />
 

@@ -1,4 +1,5 @@
-import Reveal from './Reveal.jsx';
+import "../style/Testimonials.css";  
+import Reveal from './Reveal.jsx';  
 import { testimonials } from '../data/content.js';
 import clinet1 from '../assests/clinet1.jpeg';
 import clinet2 from '../assests/clinet2.jpeg';

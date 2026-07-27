@@ -79,13 +79,13 @@ export default function ServicesHero() {
             📈 +250% Traffic
           </div>
 
-          <div className="floating-card card2">
+          {/* <div className="floating-card card2">
             ⭐ Google Premier Partner
-          </div>
+          </div> */}
 
-          <div className="floating-card card3">
+          {/* <div className="floating-card card3">
             🤖 AI Powered
-          </div>
+          </div> */}
 
           <div className="floating-card card4">
             🚀 500+ Projects

@@ -8,12 +8,9 @@ export default function ServiceSection({
   description,
   features,
   button,
-  stats,
   reverse,
-   illustration,
-})
- {
- const Illustration = illustration || null;
+  illustration,
+}) {
   return (
     <section
       id={id}
@@ -21,9 +18,8 @@ export default function ServiceSection({
     >
       <div className="container service-wrapper">
 
-        {/* Left / Right Content */}
+        {/* Content */}
         <div className="service-content">
-
           <span className="service-badge">{badge}</span>
 
           <h2>{title}</h2>
@@ -43,23 +39,19 @@ export default function ServiceSection({
             {button}
             <ArrowRight size={18} />
           </button>
-
         </div>
 
         {/* Visual */}
-<div className="service-visual">
-
-  <div className="visual-card">
-    {Illustration && <Illustration />}
-  </div>
-
-  {stats.map((item, index) => (
-    <div className={`floating-stat stat${index + 1}`} key={index}>
-      <h4>{item.value}</h4>
-      <span>{item.label}</span>
-    </div>
-  ))}
-</div>  
+        <div className="service-visual">
+          <div className="visual-card">
+            <img
+              src={illustration}
+              alt={title}
+              className="service-illustration"
+              loading="lazy"
+            />
+          </div>
+        </div>
 
       </div>
     </section>

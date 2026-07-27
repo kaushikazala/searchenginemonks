@@ -61,6 +61,7 @@ width:300px;
 position:relative;
 
 z-index:2;
+border-radius: 50%;
 
 animation:floatStory 5s ease-in-out infinite;
 
@@ -245,6 +246,7 @@ height:380px;
 .story-image-card img{
 
 width:220px;
+
 
 }
 

@@ -12,7 +12,7 @@ import PortfolioCTA from "../components/PortfolioCTA";
 export default function PortfolioPage() {
   return (
     <>
-      <Navbar />
+
 
       <PortfolioHero />
 
