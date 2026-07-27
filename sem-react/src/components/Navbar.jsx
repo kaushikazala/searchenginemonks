@@ -15,7 +15,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const closeMenu = () => setMenuOpen(false);
+  const closeMenu = () => {
+    setMenuOpen(false)
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
 
   const navLinkClass = ({ isActive }) =>
     `sem-nav-link${isActive ? " active" : ""}`;

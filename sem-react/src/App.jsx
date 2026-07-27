@@ -15,10 +15,12 @@ import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function LandingPage() {
   return (
     <>
+
       <Hero />
       <Services />
       <WhyUs />
@@ -33,6 +35,7 @@ function LandingPage() {
 export default function App() {
   return (
     <>
+    <ScrollToTop/>
       <Navbar />
 
       <main className="page-content">
